@@ -1,0 +1,409 @@
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: sticky;
+  top: 0px;
+  background-color: #e5e2e2;
+  display: block;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 4%;
+}
+.navcolor {
+  color: #b32472;
+  font-weight: 900;
+  font-family: "Roboto", "Source Sans Pro";
+}
+#logo {
+  padding: 6px;
+  display: flex;
+  width: 22%;
+  border-radius: 20%;
+  border-color: #ebe8e8;
+}
+#navigation {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: space-evenly;
+
+  color: rgb(228, 158, 173);
+  font-family: "Roboto", "Source Sans Pro";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-left: 38%;
+}
+#intro {
+  /* background-image: linear-gradient(
+    to bottom,
+    rgb(255, 253, 253),
+    rgb(255, 244, 239)
+  ); */
+  background-color:  linear-gradient(to bottom, rgb(255, 255, 255), rgba(252,238,231));;
+  padding: 0 80px;
+  height: 750px;
+  margin-bottom: -1em;
+}
+section {
+  display: block;
+}
+h2 {
+  font-family: "Playfair Display";
+  /* font-size: 38px; */
+  font-size: 3vw;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: rgb(228, 158, 173);
+  /* color: #619FB4; */
+}
+h1 {
+  font-family: "Playfair Display";
+  /* font-size: 56px; */
+  font-size: 4.5vw;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #b32472;
+  word-wrap: keep-all;
+  margin-top: -0.1em;
+}
+#resume {
+  grid-area: resume;
+  /* padding-bottom: 30px; */
+  float: left;
+  margin-top: 0.4em;
+}
+#intro button {
+  margin-top: 10px;
+  font-size: 9pt;
+  background-color: rgb(228, 158, 173);
+  border: 1px solid rgb(228, 158, 173);
+  width: 160px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  align-content: center;
+  margin-bottom: 80px;
+  font-weight: 400;
+}
+#buttonColor {
+  color: #b32472;
+  font-weight: 900;
+  font-family: "Playfair Display";
+}
+/* #icon {
+  grid-area: icon;
+  float: left;
+  margin-top: 18%;
+} */
+
+#hiEli {
+  grid-area: hiEli;
+  float: left;
+  margin-top: 10px;
+}
+#myImage {
+  max-width: 120%;
+  grid-area: myImage;
+  margin-top: -0.4em;
+
+  border-radius: 50%;
+}
+#about {
+  grid-area: about;
+  margin-top: 20px;
+}
+
+/* #email {
+  font-family: "Playfair Display";
+  font-size: 2vw;
+  font-weight: 100;
+  grid-area: email;
+  color: rgb(177, 39, 131);
+  font-size: 90%;
+  float: left;
+  margin-top: 18%;
+} */
+
+.heroGridArea {
+  max-width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 25% 55% 20%;
+  grid-template-columns: 75% 25%;
+  grid-template-areas:
+    "hiEli hiEli"
+    "about myImage"
+    "resume resume";
+}
+
+#aboutMeSection {
+  max-width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 249, 249),
+    rgb(255, 248, 250)
+  );
+}
+.about.me.P {
+  font-family: "Playfair Display";
+  /* font-size: 38px; */
+  font-size: 5vw;
+  font-weight: 200;
+  font-style: italic;
+}
+.about-me {
+  float: center;
+  text-align: center;
+  font-family: "Playfair Display";
+  /* font-size: 38px; */
+  font-size: 1.2vw;
+  font-weight: 550;
+
+  color: rgb(95, 26, 72);
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  position: fixed;
+  top: 15%;
+  width: 100%;
+}
+.skillSection {
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+.skillItem {
+  display: inline-block;
+  justify-content: center;
+}
+h6 {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 24px;
+  color: rgb(207, 126, 144);
+  letter-spacing: 1px;
+  margin: 1px 10px 10px 0px;
+}
+.pDetails {
+  font-family: "Playfair Display";
+  /* font-size: 38px; */
+  font-size: 1vw;
+  font-weight: 550;
+
+  letter-spacing: 1px;
+  color: rgb(95, 26, 72);
+  text-align: left;
+  line-height: 170%;
+}
+.work {
+  background-image: linear-gradient(to bottom, rgb(239, 249, 255), rgb(255, 248, 250));
+}
+
+
+.workHead{
+  width: 10px;
+  height: 50px;
+}
+
+#workGrid{
+
+  display: grid;
+   padding: 0px 50px 0px 50px; 
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-rows: 460px 460px 460px 460px ;
+  grid-template-areas:
+      "huloop"
+      "KnotsOfLove"
+      "dolgovern"
+      "entertainment"; 
+}
+
+div.workGridArea img {
+  width: 50%;
+  height: 97%;
+  vertical-align: middle;
+
+}
+.container:hover .overlay {
+  opacity: 1;
+  display: flex;
+
+}
+#huloop{
+  grid-area: huloop;
+}
+
+
+.workGridArea{
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 40px;
+  cursor: pointer;
+}
+.container{
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.workstudyHeader{
+    background-color: rgba(58, 132, 216, 0.7);
+    font-family: 'Playfair Display';
+    font-size: 18px;
+    font-weight: 100;
+    /* letter-spacing: 10; */
+    padding: 10px 15px;
+    height: 26px;
+    color: white;
+    border-left: 8px solid rgb(224, 166, 220);
+    /* position: absolute; */
+    /* left: 335px; */
+}
+.text{
+  font-family: 'Roboto','Source Sans Pro';
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 22px;
+}
+.overlay{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-content: space-between; */
+    justify-content: center;
+    height: 118%;
+    width: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(58, 132, 216, 0.7);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.overlay-head{
+  margin: 60px 24px 20px 24px;
+  font-family: 'Playfair Display';
+  font-weight: 200;
+  font-size: 26px;
+  line-height: 36px;
+  color: white;
+  letter-spacing: 1px;
+
+}
+.overlay-subhead {
+  margin: 10px 24px 20px 24px;
+  font-family: 'Roboto','Source Sans Pro';
+  font-weight: 200;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1px;
+
+}
+.overlay-body {
+  margin: 10px 55px 30px 55px;
+  font-family: 'Roboto','Source Sans Pro';
+  font-weight: 100;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1px;
+
+}
+.work button {
+  font-family: 'Roboto','Source Sans Pro';
+  margin-top: 10px;
+  font-size: 8pt;
+  font-weight: 400;
+  background-color: rgba(3, 14, 77, 0.7);
+  border: 1px solid rgba(3, 14, 77, 0.7);
+  width: 160px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  align-content: center;
+  margin-bottom: 80px;
+}
+.work button:hover {
+  font-family: 'Roboto','Source Sans Pro';
+  margin-top: 10px;
+  font-size: 8pt;
+  font-weight: 400;
+  background-color: rgba(15, 58, 107, 0.7);
+  border: 1px solid rgba(15, 58, 107, 0.7);
+  width: 160px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  align-content: center;
+  margin-bottom: 80px;
+}
+
+#KnotsOfLove{
+  grid-area: KnotsOfLove;
+  /* background-image: url(https://github.com/elnazeghbal/UX_UI_HW_17/blob/master/images/newKnotsoflove1.png); */
+}
+#dolgovern{
+  grid-area: dolgovern;
+  /* background-image: url(https://github.com/elnazeghbal/UX_UI_HW_17/blob/master/images/new1government.png); */
+}
+#entertainment{
+  grid-area: entertainment;
+  /* background-image: url( https://github.com/elnazeghbal/UX_UI_HW_17/blob/master/images/newentertainment.png); */
+}
+.deleteSpace{
+  margin-top: -6.3em;
+}
+.footer {
+  background-image: linear-gradient(to bottom, #e5e2e2, rgb(255, 248, 250));
+  padding: 10px;
+  align-self: center;
+}
+#footerContent {
+  display: flex;
+  flex-direction: row;
+  /* margin: 0px 4%; */
+}
+#socialIcons {
+  margin-top: 4px;
+  display: flex;
+  width: 45%;
+}
+.footer img {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 35%;
+}
+.p3 {
+  color: rgb(228, 158, 173);
+  font-size: 10pt;
+  /* box-align: center; */
+  margin-top: 20px;
+  width: 15%;
+  font-family: 'Roboto','Source Sans Pro'!important;
+text-align: center;
+margin-left: 29em;
+}
