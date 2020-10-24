@@ -409,3 +409,35 @@ div.workGridArea img {
 text-align: center;
 margin-left: 29em;
 }
+
+/*HULU CASE STUDY*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: 'Roboto','Source Sans Pro';
+  color: #7AA2AD;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 24px;
+  margin: 0px 5%;
+}
+bg-white {
+  background-color: #fff!important;
+}
+.jumbotron-fluid {
+  position: relative;
+}
+.container {
+  padding: 20px 0px 20px 0px;
+  align-items: center;
+}
+.pb-2, .py-2 {
+  padding-bottom: .5rem!important;
+  align-items: baseline;
+}
+.footer {
+  background-color: #505050;
+  padding: 18px;
+  align-self: center;
